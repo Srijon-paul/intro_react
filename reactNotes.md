@@ -19,3 +19,12 @@ const AreactElement = React.createElement(
     'visit google'
 );
 ```
+## 7. only one element is allowed while returning anything from react function so to avoid this we use empty tags to create many elements inside that.(<> </>)
+
+## Working of Virtual DOM with createRoot (study more on react fibre github repo by acdlite)
+### 1. this method creates a virtual DOM as browser itself has and compares with that.
+### 2. actual DOM reload the whole page and repaint it, but react's virtual DOM has tree like nodes which can access different nodes on DOM and can replace or update them as needed. (now virtual DOM is not used by react)
+### 3. the "virtual DOM" which we speak about is the reconciliation algorithm running behind
+
+## Hooks
+### 1. hooks are special methods which are used to change ui or we can say which actually resposible for changing the DOM elements as per the changes we need to done.
