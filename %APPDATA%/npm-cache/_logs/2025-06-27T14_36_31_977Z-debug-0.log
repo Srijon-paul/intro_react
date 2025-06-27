@@ -1,0 +1,52 @@
+0 verbose cli C:\Program Files\nodejs\node.exe D:\Git\intro_react\%APPDATA%\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.4.2
+2 info using node@v22.14.0
+3 silly config load:file:D:\Git\intro_react\%APPDATA%\npm\node_modules\npm\npmrc
+4 silly config load:file:D:\Git\intro_react\.npmrc
+5 silly config load:file:C:\Users\fossi\.npmrc
+6 silly config load:file:D:\Git\intro_react\%APPDATA%\npm\etc\npmrc
+7 verbose title npm create vite@latest
+8 verbose argv "create" "vite@latest"
+9 verbose logfile logs-max:10 dir:D:\Git\intro_react\%APPDATA%\npm-cache\_logs\2025-06-27T14_36_31_977Z-
+10 verbose logfile D:\Git\intro_react\%APPDATA%\npm-cache\_logs\2025-06-27T14_36_31_977Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+14 http fetch GET 200 https://registry.npmjs.org/create-vite 814ms (cache updated)
+15 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+16 silly idealTree buildDeps
+17 silly fetch manifest create-vite@7.0.0
+18 silly packumentCache full:https://registry.npmjs.org/create-vite cache-miss
+19 http fetch GET 200 https://registry.npmjs.org/create-vite 216ms (cache updated)
+20 silly packumentCache full:https://registry.npmjs.org/create-vite set size:undefined disposed:false
+21 silly placeDep ROOT create-vite@7.0.0 REPLACE for:  want: 7.0.0
+22 silly reify mark retired [
+22 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\create-vite',
+22 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\create-vite',
+22 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\create-vite.cmd',
+22 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\create-vite.ps1',
+22 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\cva',
+22 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\cva.cmd',
+22 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\cva.ps1'
+22 silly reify ]
+23 silly reify moves {
+23 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\create-vite': 'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.create-vite-D4gNt4xa',
+23 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\create-vite': 'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\.create-vite-aPMnFxl9',
+23 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\create-vite.cmd': 'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\.create-vite.cmd-FDQfsnd1',
+23 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\create-vite.ps1': 'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\.create-vite.ps1-nPz2weYu',
+23 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\cva': 'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\.cva-do20Opz4',
+23 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\cva.cmd': 'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\.cva.cmd-kQEkRXMs',
+23 silly reify   'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\cva.ps1': 'D:\\Git\\intro_react\\%APPDATA%\\npm-cache\\_npx\\1415fee72ff6294b\\node_modules\\.bin\\.cva.ps1-BYidLSqg'
+23 silly reify }
+24 silly audit bulk request { 'create-vite': [ '7.0.0' ] }
+25 http cache create-vite@https://registry.npmjs.org/create-vite/-/create-vite-7.0.0.tgz 1ms (cache hit)
+26 silly tarball no local data for create-vite@https://registry.npmjs.org/create-vite/-/create-vite-7.0.0.tgz. Extracting by manifest.
+27 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 460ms
+28 silly audit report {}
+29 http fetch GET 200 https://registry.npmjs.org/create-vite/-/create-vite-7.0.0.tgz 693ms (cache miss)
+30 verbose cwd D:\Git\intro_react
+31 verbose os Windows_NT 10.0.26200
+32 verbose node v22.14.0
+33 verbose npm  v11.4.2
+34 verbose exit 0
+35 info ok
