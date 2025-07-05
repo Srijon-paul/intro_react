@@ -1,0 +1,15 @@
+1. redux is a individual library which works on state management.
+2. react-redux is a implementation of redux to wire up react and redux together for working
+3. redux was complex to debug than contextApi. so redux Toolkit was introduced to make that debugging easy through different functions
+
+Starting of building using redux
+1. start using building store first using "configureStore". which is known as single source of truth. Each application have a single store
+2. features are mainly known as slice in redux so for using store and make changes in it, it allows changes through reducers only for that we use 'createSlice' method to create slice.
+3. to make slice we need 3 three major things - name, initialState and reducers
+4. initialState can empty array, object, anything depends on what we want it to start from.
+5. reducers are the object through which we make changes by passing into that reducers
+6. reducers are exported using ".action". in reducers we will get "state", "action"
+7. to make use of reducers in states we need to export the reducer at last in the slice
+8. to send data we use "Dispatch" method
+9. to select the state which need to be dispatched we use selectors 
+10. useSelectors have access to states
