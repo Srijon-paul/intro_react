@@ -1,0 +1,17 @@
+1. Environment variables(.env)
+
+- these are used as syatem variables which contains sensitive data which are not needed to show in frontend as they could be extracted using js .
+- these files are used in backend for storing certain values which are stored here in .env
+- this file is created directly on the root directory of the project
+- never track .env files in github, so we put this file in .gitignore
+- also to make sure all the variables we used are there in one place for later shipping we use a sample file ".env.sample" which contains only variables later which can be filled with values as per required.
+- access of this file is taken differently from different frameworks and environments (like: CRA, vite, etc)
+- sometimes .env files loads once during startup but maximum times we need to restart the application
+- it is accessed as (process.env.<name of the variable>) NOTE: NOT FOR EVERY CASE AS MENTIONED ON 8TH LINE
+
+- inside .env variable name is given with initial letters as specified for the specific application we are using (like: CRA, vite, etc), (like for vite: VITE_APPWRITE_URL=test-environment)
+- while accessing it in app.jsx or anywhere we also use specified method to access (like for vite: "import.meta.env.VITE_APPWRITE_URL")
+
+- the values inside variables of .env files come from the appwrite while creating attributes, buckets and collections
+- sometimes accessing .env variables can cause issues by not loading and hence application crashes. To avoid this in production level a folder and a file is used inside src folder (mostly named as config or anything) and then exporting an object by creating one.
+- this object consist of the .env variables with string converted values with a key, which we can be access easily later on.
