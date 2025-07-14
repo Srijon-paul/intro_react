@@ -13,17 +13,17 @@ function PostForm({ post }) {
 	const { register, handleSubmit, watch, setValue, control, getValues } = useForm({
 		defaultValues: {
 			title: post?.title || "",
-			slug: post?.slug || "",
+			slug: post?.$id || "",
 			content: post?.content || "",
 			status: post?.status || "active",
 		}
 	})
 	const navigate = useNavigate();
-	const userData = useSelector(state => state.user.userData)
+	const userData = useSelector(state => state.auth.userData)
 
 	const submit = async (data) => {
 		if (post) {
-			const file = data.featuredImage[0] ? service.uploadFile(data.featuredImage[0]) : null
+			const file = data.image[0] ? service.uploadFile(data.image[0]) : null
 
 			if (file) {
 				service.deleteFile(post.featuredImage)
@@ -37,7 +37,7 @@ function PostForm({ post }) {
 				navigate(`/post/${dbPost.$id}`);
 			}
 		} else {
-			const file = await service.uploadFile(data.featuredImage[0]);
+			const file = await service.uploadFile(data.image[0]);
 
 			if (file) {
 				const fileId = file.$id
@@ -58,8 +58,8 @@ function PostForm({ post }) {
 			return value
 			.trim()
 			.toLowerCase()
-			.replace(/^[a-zA-Z\d\s]+/g, '-') // regex : "^" means negation without including [a-z], [A-Z], any digits, spacing, convert to '-'
-			.replace(/\s/g, '-') // includes spacing
+			.replace(/[^a-zA-Z\d\s]+/g, "-") // regex : "^" means negation without including [a-z], [A-Z], any digits, spacing, convert to '-'
+			.replace(/\s/g, "-"); // includes spacing
 		}
 		return '';
 	}, [])
@@ -108,7 +108,7 @@ function PostForm({ post }) {
                 {post && (
                     <div className="w-full mb-4">
                         <img
-                            src={appwriteService.getFilePreview(post.featuredImage)}
+                            src={service.getFilePreview(post.featuredImage)}
                             alt={post.title}
                             className="rounded-lg"
                         />

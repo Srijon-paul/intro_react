@@ -30,8 +30,8 @@ function Header() {
       active: authStatus
     },
     {
-      name: "Add Posts",
-      slug: "/add-posts",
+      name: "Add Post",
+      slug: "/add-post",
       active: authStatus
     }
   ]
@@ -58,7 +58,7 @@ function Header() {
                 </li>
               ) : null
             )}
-            // this is a common react syntax is for checking if authStatus true then execute those inside parenthesis
+            {/* // this is a common react syntax is for checking if authStatus true then execute those inside parenthesis */}
             {authStatus && (
               <li>
                 <LogoutBtn/>

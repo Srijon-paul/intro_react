@@ -14,6 +14,7 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
 				// render takes a call back taking fields as key and value as event depending on which it changes or renders
 				render={({ field: { onChange } }) => (
 					<Editor
+						apiKey='u42z7kb4g1vtxa7b0vdugpq29bh0gspkybwj80mzpvzbepp9'
 						initialValue='default value' // it can be taken as any default value
 						// init is used to specify what are the features we will choose for our editor 
 						// this things are to be studied from documentation
